@@ -1,0 +1,23 @@
+h1{
+    background-color: #7E998A;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.estilo2{
+    background-color: #6AD5CB;
+    border-style: double;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-color: #85877C;
+}
+
+#marcas{
+    background-color: #2DE1C2;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
