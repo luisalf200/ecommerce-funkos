@@ -1,29 +1,5 @@
-h1{
-    background-color: #7E998A;
-    border-radius: 10px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 40px;
-}
 
-.estilo2{
-    background-color: #6AD5CB;
-    border-style: double;
-    text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-color: #85877C;
-    font-size: 25px;
-}
-.estilo3{
-    background-color: #EEC584;
-    border-style: double;
-    text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-color: #85877C;
-    font-size: 25px;
-}
-
-#marcas{
+#marcas {
     background-color: #2DE1C2;
     border-radius: 20px;
     text-align: center;
@@ -31,7 +7,8 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 
 }
-.barraitem{
+
+.barraitem {
     background-color: #DBD8B3;
     border: 2px solid;
     padding-top: 20px;
@@ -39,58 +16,66 @@ h1{
     padding-right: 30px;
 }
 
-.label{
+.label {
     padding-top: 35px;
 }
-.barra{
+
+.barra {
     display: flex;
     background-color: #FF6978;
     list-style: none;
     gap: 2rem;
 }
-.imanav{
+
+.imanav {
     width: 100px;
     height: 100px;
 }
 
-.imavent{
-    width: 300px;
+.imavent {
+    width: 400px;
     border: solid black;
 }
 
-.tabvent{
-    background-color: #C8AB83;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.etivent{
+.etivent {
+    background-color: black;
+    opacity: 0.5;
     display: inline;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-style: italic;
 }
 
-.imglogo{
-    position: relative;
-    left: 50%;
-    height: 200px;
+
+@media only screen and (min-width:320px) and (max-width:500px) {
+    body{
+        background-color: #FFFFE8;
+    }
+
+    .barra{
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .barraitem {
+        background-color: #DBD8B3;
+        text-align: center;
+        border: 2px solid;
 }
 
-.titmar:hover{
-    background-color: red;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.imavent {
+    width: 300px;
+    border: solid black;
 }
-
-.titdc:hover{
-    background-color: white;
-    color: blue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1{
+    font-size: 30px;
 }
+#marcas {
+    background-color: #2DE1C2;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
 
-.titani:hover{
-    background-color: orange;
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 }
