@@ -1,0 +1,19 @@
+@mixin letrasest($fondo, $borde){
+    background-color: $fondo;
+    border-style: $borde;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-color: #85877C;
+    font-size: 20px;
+    text-align: center;
+}
+
+@mixin letrasestcel($fondo, $borde){
+    background-color: $fondo;
+    border-style: $borde;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-color: #85877C;
+    font-size: 15px;
+    text-align: center;
+}
