@@ -46,6 +46,38 @@
     font-style: italic;
 }
 
+.produc {
+    border: 2px solid maroon;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    margin: 10px;
+}
+
+.prodimg {
+    height: 300px;
+}
+
+.nomprod {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.datosprod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+}
+
+.items {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 @media only screen and (min-width:320px) and (max-width:500px) {
     body{
@@ -77,5 +109,9 @@ h1{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 
+}
+
+.prodimg {
+    height: 200px;
 }
 }

@@ -1,0 +1,13 @@
+.elemento {
+    border: 2px solid maroon;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    margin: 10px;
+    text-align: center;
+}
+
+.estilo {
+    color: red;
+}
