@@ -11,3 +11,49 @@
 .estilo {
     color: red;
 }
+#marcas {
+    background-color: #2DE1C2;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.barraitem {
+    background-color: #DBD8B3;
+    border: 2px solid;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.label {
+    padding-top: 35px;
+}
+
+.barra {
+    display: flex;
+    background-color: #FF6978;
+    list-style: none;
+    gap: 2rem;
+}
+
+.imanav {
+    width: 100px;
+    height: 100px;
+}
+
+.imavent {
+    width: 400px;
+    border: solid black;
+}
+
+.etivent {
+    background-color: black;
+    opacity: 0.5;
+    display: inline;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}

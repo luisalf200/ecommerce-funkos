@@ -12,6 +12,54 @@
     <title>Tareas</title>
 </head>
 
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img class="imanav" src="./imagen/PopLogo.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="./index.html">Funkos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tipos de Funko
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./marvel.html">Marvel</a></li>
+                            <li><a class="dropdown-item" href="./DC.html">DC</a></li>
+                            <li><a class="dropdown-item" href="./Anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tareas.html">Tareas</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <img class="imanav" src="./imagen/carrito.png" alt="carrito" width="30">
+            </div>
+        </div>
+    </nav>
+</header>
+
 <body>
 
     <h1>hola mundo</h1>
@@ -27,7 +75,9 @@
     <button id="Ocultar">Ocultar productos</button>
 
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="./javascript/tareas.js"></script>
 </body>
 
