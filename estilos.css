@@ -8,6 +8,9 @@
     top: 0;
     width: 100%;
 }
+.titulo{
+    font-size: 50px;
+}
 #marcas {
     background-color: #2DE1C2;
     border-radius: 20px;
@@ -34,9 +37,17 @@ padding-top: 10px;
     padding-top: 40px;
     }
 .enter3{
-    margin-top: 80px;
+    margin-top: 120px;
     padding-top: 40px;
     }
+
+.contadorcarr{
+    position: relative;
+    left: 55px;
+    top: -105px;
+    color: red;
+}
+
 
 .label {
     padding-top: 35px;
@@ -141,7 +152,7 @@ h1{
 .prodimg {
     height: 110px;
 }
-.produc {
+.producto {
     max-width: 80%;
 }
 }

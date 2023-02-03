@@ -121,10 +121,14 @@ const productos = [
     },
     ];
 
-    const contenedorProductos = document.getElementById('contenedorprod')
+    const contenedorProductos = document.getElementById('contenedorprod');
+    const contadoricon = document.getElementById("contadoricon");
+    const contador = document.createElement ("p");
     
 
 let carrito = []
+
+//aca lo incerta al html 
 
 productos.forEach((elementani) => {
     const div = document.createElement('div')
@@ -148,10 +152,20 @@ productos.forEach((elementani) => {
             const boton = document.getElementById(`agregar${elementani.Id}`)
 
             boton.addEventListener('click', () => {
-            //esta funcion ejecuta el agregar el carrito con la id del producto
-        agregarAlCarrito(elementani.Id)
+        agregarAlCarrito(elementani.Id,carrito)
+        contadorcarr();
     })
         });
+
+const contadorcarr = () =>{
+    if (carrito.length !==0){
+        contadoricon.appendChild(contador);
+        contador.textContent = carrito.length;
+        contador.classList.add("contadorcarr")
+    }
+}
+
+//inserta al array carrito los productos
 
 const agregarAlCarrito = (prodId) => {
     const existe = carrito.some (prod => prod.Id === prodId)
@@ -165,5 +179,8 @@ const agregarAlCarrito = (prodId) => {
     const item = productos.find((prod) => prod.Id === prodId)
     carrito.push(item)
 }
-console.log(carrito)
+console.log(carrito, `el producto se agrego con exito`)
 }
+
+
+
