@@ -1,4 +1,13 @@
-
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 #marcas {
     background-color: #2DE1C2;
     border-radius: 20px;
@@ -15,6 +24,19 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.enter{
+margin-top: 30px;
+padding-top: 10px;
+}
+.enter2{
+    margin-top: 40px;
+    padding-top: 40px;
+    }
+.enter3{
+    margin-top: 80px;
+    padding-top: 40px;
+    }
 
 .label {
     padding-top: 35px;
@@ -46,19 +68,22 @@
     font-style: italic;
 }
 
-.produc {
+.producto {
     border: 2px solid maroon;
     background-color: white;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 5px lightblue;
-    max-width: 30%;
+    max-width: 31%;
+    margin: 15px;
 }
 
 .prodimg {
     height: 200px;
 }
-
+.row{
+    display: flex;
+}
 .nomprod {
     text-transform: uppercase;
     text-align: center;
@@ -77,8 +102,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.produc {
-    margin: 10px;
+.estilocarr{
+    border-bottom: 1px solid #ccc;
 }
 
 @media only screen and (min-width:320px) and (max-width:500px) {

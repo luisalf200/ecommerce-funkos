@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light menu">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
                     <img class="imanav" src="./imagen/PopLogo.png" alt="logo">
@@ -37,7 +37,7 @@
                             <a class="nav-link" href="./procuctos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./quienes_somos.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./tareas.html">Tareas</a>
@@ -47,34 +47,56 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                    <img class="imanav" src="./imagen/carrito.png" alt="carrito" width="30">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"><img class="imanav" src="./imagen/carrito.png" alt="carrito"
+                            width="30"></button>
                 </div>
             </div>
         </nav>
     </header>
-    <section>
-        <h1>Quienes somos:</h1>
-        <p class="estilo3">Los funko pop son figuras con un diseño peculiar. Basados en el concepto japonés chibi de estilo aniñado,
-            tienen cuerpos reducidos y cabezas grandes en comparación con el cuerpo. Muñecos cabezones que representan
-            personajes de cómics, de Disney, series de TV, películas o incluso personas reales.</p>
-        <p class="estilo2">somos una equipo amante de los funkos los cuales te ayudaremos a encontrar los funkos de tus
-            personajes
-            favoritos ya sea de marvel, dc o anime icluso si quiere que te ayudemos a localizar cualquier otro funki de
-            otras marcas con gusto te ayudaremos para poder encontrar el funko de tus sueños</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RCnxTwMZLes" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <br>
-        <h2>donde nos encontramos:</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201531.2664714323!2d-98.283608196107!3d19.025843698538736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sPuebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1668980003361!5m2!1ses-419!2smx"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="enter2">
+        <div class="enter">
+            <h1>Quienes somos:</h1>
+            <p class="estilo3">Los funko pop son figuras con un diseño peculiar. Basados en el concepto japonés chibi de estilo aniñado,
+                tienen cuerpos reducidos y cabezas grandes en comparación con el cuerpo. Muñecos cabezones que representan
+                personajes de cómics, de Disney, series de TV, películas o incluso personas reales.</p>
+            <p class="estilo2">somos una equipo amante de los funkos los cuales te ayudaremos a encontrar los funkos de tus
+                personajes
+                favoritos ya sea de marvel, dc o anime icluso si quiere que te ayudemos a localizar cualquier otro funki de
+                otras marcas con gusto te ayudaremos para poder encontrar el funko de tus sueños</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RCnxTwMZLes" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br>
+            <h2>donde nos encontramos:</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201531.2664714323!2d-98.283608196107!3d19.025843698538736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sPuebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1668980003361!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+        <script src="./javascript/carrito.js"></script>
+        <!-- estructura carrito -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">cantidad</th>
+                        <th scope="col">producto</th>
+                        <th scope="col">serie</th>
+                        <th scope="col">precio</th>
+                    </tr>
+        </div>
+    </div>
 </body>
 
 </html>

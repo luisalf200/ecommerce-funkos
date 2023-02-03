@@ -7,6 +7,7 @@ const productos = [
         Mensaje: "El hombre de hierro",
         serie: "Marvel",
         tipo: "titmar",
+        cantidad: 1,
     },
     {
         Id: 2,
@@ -16,6 +17,7 @@ const productos = [
         Mensaje: "El dios del trueno",
         serie: "Marvel",
         tipo: "titmar",
+        cantidad: 1,
     },
     {
         Id: 3,
@@ -25,6 +27,7 @@ const productos = [
         Mensaje: "El amigable vecino",
         serie: "Marvel",
         tipo: "titmar",
+        cantidad: 1,
     },
     {
         Id: 4,
@@ -34,6 +37,7 @@ const productos = [
         Mensaje: "El primer vengador",
         serie: "Marvel",
         tipo: "titmar",
+        cantidad: 1,
     },
     {
         Id: 5,
@@ -43,6 +47,7 @@ const productos = [
         Mensaje: "El hombre de hierro",
         serie: "DC",
         tipo: "titdc",
+        cantidad: 1,
     },
     {
         Id: 6,
@@ -52,6 +57,7 @@ const productos = [
         Mensaje: "El caballero de la noche",
         serie: "DC",
         tipo: "titdc",
+        cantidad: 1,
     },
     {
         Id: 7,
@@ -61,6 +67,7 @@ const productos = [
         Mensaje: "El velocista escarlata",
         serie: "DC",
         tipo: "titdc",
+        cantidad: 1,
     },
     {
         Id: 8,
@@ -70,6 +77,7 @@ const productos = [
         Mensaje: "La reina de las amazonas",
         serie: "DC",
         tipo: "titdc",
+        cantidad: 1,
     },
     {
         Id: 9,
@@ -79,6 +87,7 @@ const productos = [
         Mensaje: "siente el ki de los guerreros Z",
         serie: "Anime",
         tipo: "titani",
+        cantidad: 1,
     },
     {
         Id: 10,
@@ -88,6 +97,7 @@ const productos = [
         Mensaje: "Atrapalos a todos",
         serie: "Anime",
         tipo: "titani",
+        cantidad: 1,
     },
     {
         Id: 11,
@@ -97,6 +107,7 @@ const productos = [
         Mensaje: "¡cumple tu sueño de convertirte en el mejor Hokage!",
         serie: "Anime",
         tipo: "titani",
+        cantidad: 1,
     },
     {
         Id: 12,
@@ -106,12 +117,21 @@ const productos = [
         Mensaje: "Nada puede suprimir la curiosidad de un humano",
         serie: "Anime",
         tipo: "titani",
+        cantidad: 1,
     },
     ];
 
-    productos.forEach((elementani) => {
-    Elemento.innerHTML += `
-    <div class="produc col-12 col-md-6 ">
+    const contenedorProductos = document.getElementById('contenedorprod')
+    
+
+let carrito = []
+
+productos.forEach((elementani) => {
+    const div = document.createElement('div')
+    div.classList.add('producto')
+    div.classList.add('col-12')
+    div.classList.add('col-md-6')
+    div.innerHTML =`
     <h2 class="${elementani.tipo}">${elementani.serie}</h2>
     <h3 class="nomprod">${elementani.nombre}</h3>
     <img class="prodimg mx-auto d-block"
@@ -119,8 +139,31 @@ const productos = [
     <figcaption class="figure-caption">${elementani.Mensaje}</figcaption>
         <div class="datosprod">
             <h4 class="precio ">${elementani.precio} $</h4>
-            <button class="btn btn-primary" id="${elementani.Id}">AÑADIR AL CARRITO</button>
+            <button class="btn btn-primary" id="agregar${elementani.Id}">AÑADIR AL CARRITO</button>
         </div>
     </div>
             `;
+            contenedorProductos.appendChild(div)
+
+            const boton = document.getElementById(`agregar${elementani.Id}`)
+
+            boton.addEventListener('click', () => {
+            //esta funcion ejecuta el agregar el carrito con la id del producto
+        agregarAlCarrito(elementani.Id)
+    })
         });
+
+const agregarAlCarrito = (prodId) => {
+    const existe = carrito.some (prod => prod.Id === prodId)
+    if (existe){
+        const prod = carrito.map (prod => {
+            if (prod.Id === prodId){
+                prod.cantidad++
+            }
+        })
+    } else { 
+    const item = productos.find((prod) => prod.Id === prodId)
+    carrito.push(item)
+}
+console.log(carrito)
+}
