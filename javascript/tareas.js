@@ -96,13 +96,19 @@ console.log("cual starter eligio: " + fuego + " numero: " + poke1);
 //tarea de semana 7 Bucles
 
 const entrenador = [
-  { nombre: "Rojo", edad: 20, inicial: "Charmander" },
-  { nombre: "Gold", edad: 40, inicial: "Totodile" },
-  { nombre: "Brendan", edad: 10, inicial: "Mudkip" },
-  { nombre: "León", edad: 27, inicial: "Chimchar" },
-  { nombre: "Victor", edad: 15, inicial: "scorbunny" },
-  { nombre: "Florian", edad: 8, inicial: "fuecoco" },
+  { nombre: "Rojo", edad: 20, inicial: "Charmander", IQ:10, total:0},
+  { nombre: "Gold", edad: 40, inicial: "Totodile", IQ:10, total:0},
+  { nombre: "Brendan", edad: 10, inicial: "Mudkip", IQ:10, total:0},
+  { nombre: "León", edad: 27, inicial: "Chimchar", IQ:10, total:0},
+  { nombre: "Victor", edad: 15, inicial: "scorbunny", IQ:10, total:0},
+  { nombre: "Florian", edad: 8, inicial: "fuecoco", IQ:10, total:0},
 ];
+
+
+for (let i = 0; i < entrenador.length; i++) {
+  let obj = entrenador[i];
+  obj.total = obj.edad * obj.IQ;
+}
 
 const lista = [];
 console.log("precio de boleto de cine: 100$");
@@ -261,6 +267,8 @@ entrenador.forEach((element) => {
         <br>
         <span class="estilo">Entrenador:</span>
         <span> ${element.inicial}</span>
+        <span class="estilo">Total:</span>
+        <span> ${element.total}</span>
       </div>
     `;
 });

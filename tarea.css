@@ -70,3 +70,10 @@
     border-radius: 30px;
     font-size: 20px;
 }
+
+.precioProducto{
+    font-size: 20px;
+    border: 2px solid maroon;
+    background-color: white;
+    max-width: 60%;
+}

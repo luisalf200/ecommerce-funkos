@@ -15,16 +15,18 @@ productostotal.innerText = storedCart.reduce(
 );
 
 storedCart.forEach((prod) => {
+  const pre1 = prod.precio * prod.cantidad
   const div = document.createElement(`div`);
   div.classList.add("lista");
   div.innerHTML = `
-        <table class="table">
+        <table class="table ${prod.tipo}">
         <tbody>
             <tr>
-                <th scope="row">${prod.cantidad}</th>
-                <td>${prod.nombre}</td>
-                <td>${prod.serie}</td>
-                <td>${prod.precio}</td>
+                <th scope="row" width="10">${prod.cantidad}</th>
+                <td width="100">${prod.nombre}</td>
+                <td width="70">${prod.serie}</td>
+                <td width="70">$${prod.precio}</td>
+                <td>$${pre1}</td>
             </tr>
         </tbody>
         </table>
