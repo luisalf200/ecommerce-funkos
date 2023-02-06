@@ -110,9 +110,8 @@ console.log("los entrenadores que entran al cine son:");
 
 for (let i = 0; i < entrenador.length; i++) {
   console.log(entrenador[i]);
-
-  let edad = entrenador[i].edad;
-  if (edad >= 18) {
+  
+  if (entrenador[i].edad >= 18) {
     console.log("VÁLIDO");
   } else {
     console.log("NO VÁLIDO");
