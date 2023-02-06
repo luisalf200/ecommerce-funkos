@@ -31,5 +31,4 @@ storedCart.forEach((prod) => {
         `;
 
   carritoestru.appendChild(div);
-  guardarStorage();
 });
