@@ -57,3 +57,16 @@
     font-size: 30px;
     font-style: italic;
 }
+
+.contadorcarr{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: -30px;
+    position: relative;
+    color: white;
+    background-color: rgb(13, 205, 13, 0.8);
+    border-radius: 30px;
+    font-size: 20px;
+}
