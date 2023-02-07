@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //inserta los productos en el HTML
 
+window.onload = function() {
+  ordenar();
+}
+
+const ordenar = () => {
+  contenedorprod.innerHTML = "";
 productos.forEach((funko) => {
   const div = document.createElement("div");
   div.classList.add("producto");
@@ -54,6 +60,7 @@ productos.forEach((funko) => {
     
   });
 });
+}
 
 //agrega los productos a la array del carrito
 
@@ -175,3 +182,53 @@ const boton2 =  document.getElementById("actual")
 boton2.addEventListener(`click`, () => {
 actualizar()
 })
+
+//ordena los productos en le HTML
+
+orden1.addEventListener(`click`, () => {
+  productos.sort((a, b) => {
+    return b.precio - a.precio;
+  });
+  ordenar();
+});
+
+orden2.addEventListener(`click`, () => {
+  productos.sort((a, b) => {
+    return a.precio - b.precio;
+  });
+  ordenar();
+});
+
+orden3.addEventListener(`click`, () => {
+  productos.sort(function (a, b) {
+    if (a.nombre < b.nombre) {
+      return -1;
+    }
+    if (a.nombre > b.nombre) {
+      return 1;
+    }
+    return 0;
+  });
+  ordenar();
+});
+
+orden4.addEventListener(`click`, () => {
+    productos.sort(function (a, b) {
+      if (a.nombre < b.nombre) {
+        return 1;
+      }
+      if (a.nombre > b.nombre) {
+        return -1;
+      }
+      return 0;
+    });
+    ordenar();
+  });
+
+  orden5.addEventListener(`click`, () => {
+    productos.sort((a, b) => {
+      return a.id - b.id;
+    });
+    ordenar();
+  });
+  

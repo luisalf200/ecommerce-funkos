@@ -1,7 +1,7 @@
 const productos = [
   {
     id: 1,
-    nombre: "Iron man",
+    nombre:"Iron man",
     imagen: "https://m.media-amazon.com/images/I/61Bx7HZwXGL._AC_SL1300_.jpg",
     precio: 500,
     Mensaje: "El hombre de hierro",
@@ -12,7 +12,7 @@ const productos = [
   },
   {
     id: 2,
-    nombre: "Thor",
+    nombre:"Thor",
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_718290-MLM48613233376_122021-O.jpg",
     precio: 699,
@@ -24,7 +24,7 @@ const productos = [
   },
   {
     id: 3,
-    nombre: "Spiderman",
+    nombre:"Spiderman",
     imagen: "https://m.media-amazon.com/images/I/61IPemXlaWL._AC_SX466_.jpg",
     precio: 459,
     Mensaje: "El amigable vecino",
@@ -35,7 +35,7 @@ const productos = [
   },
   {
     id: 4,
-    nombre: "Capitan america",
+    nombre:"Capitan america",
     imagen: "https://m.media-amazon.com/images/I/61S5B9UkgBL._AC_SX679_.jpg",
     precio: 659,
     Mensaje: "El primer vengador",
@@ -46,7 +46,7 @@ const productos = [
   },
   {
     id: 5,
-    nombre: "Superman",
+    nombre:"Superman",
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_701569-MLM46969627699_082021-O.jpg",
     precio: 1200,
@@ -58,7 +58,7 @@ const productos = [
   },
   {
     id: 6,
-    nombre: "Batman",
+    nombre:"Batman",
     imagen: "https://m.media-amazon.com/images/I/61MGuIiT56L._AC_SL1474_.jpg",
     precio: 799,
     Mensaje: "El caballero de la noche",
@@ -69,7 +69,7 @@ const productos = [
   },
   {
     id: 7,
-    nombre: "Flash",
+    nombre:"Flash",
     imagen:
       "https://cdn.shopify.com/s/files/1/2437/4099/products/7ecf516dd5ee4f959a654a6e114cc3ffxl_1200x1200.jpg?v=1611941496",
     precio: 850,
@@ -81,7 +81,7 @@ const productos = [
   },
   {
     id: 8,
-    nombre: "Mujer maravilla",
+    nombre:"Mujer maravilla",
     imagen: "https://m.media-amazon.com/images/I/61Xi+BGmGgL._AC_SX425_.jpg",
     precio: 869,
     Mensaje: "La reina de las amazonas",
@@ -92,7 +92,7 @@ const productos = [
   },
   {
     id: 9,
-    nombre: "Dragon ball",
+    nombre:"Dragon ball",
     imagen: "https://cf.shopee.com.mx/file/sg-11134201-22100-x6roixdttoiv07",
     precio: 969,
     Mensaje: "siente el ki de los guerreros Z",
@@ -103,7 +103,7 @@ const productos = [
   },
   {
     id: 10,
-    nombre: "Pokemon",
+    nombre:"Pokemon",
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_2X_936138-MLM51181080686_082022-V.webp",
     precio: 1100,
@@ -115,7 +115,7 @@ const productos = [
   },
   {
     id: 11,
-    nombre: "Naruto",
+    nombre:"Naruto",
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_904980-MLA48341053338_112021-O.jpg",
     precio: 540,
@@ -127,7 +127,7 @@ const productos = [
   },
   {
     id: 12,
-    nombre: "Attack on titans",
+    nombre:"Attack on titans",
     imagen: "https://m.media-amazon.com/images/I/51OIzYsBV5L._AC_SX425_.jpg",
     precio: 450,
     Mensaje: "Nada puede suprimir la curiosidad de un humano",
