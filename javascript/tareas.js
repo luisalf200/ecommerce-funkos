@@ -306,3 +306,47 @@ Borrar.addEventListener("click", function () {
   Borrar.style.display = "none";
   location.reload();
 });
+
+fetch("https://pokeapi.co/api/v2/pokemon?limit=100")
+        .then(response => response.json())
+        .then(data => {
+          const pokemonList = data.results.map(pokemon => ({
+            name: pokemon.name,
+            url: pokemon.url
+          }));
+          
+          pokemonList.forEach(pokemon => {
+            fetch(pokemon.url)
+              .then(response => response.json())
+              .then(data => {
+                const stats = data.stats.map(stat => ({
+                  name: stat.stat.name,
+                  value: stat.base_stat
+                }));
+                
+                const pokemonHTML = `
+                <div class="producto col-12 col-md-6">
+                    <p>${data.name}</p>
+                    <img src="${data.sprites.front_default}" alt="${data.name}" onmouseover="this.src='${data.sprites.front_shiny}'" onmouseout="this.src='${data.sprites.front_default}'">
+                    <table>
+                      <tr>
+                        <th>Stat</th>
+                        <th>Value</th>
+                      </tr>
+                      ${stats
+                        .map(
+                          stat =>
+                            `<tr>
+                              <td>${stat.name}</td>
+                              <td>${stat.value}</td>
+                            </tr>`
+                        )
+                        .join("")}
+                    </table>
+                    </div>
+                `;
+                
+                document.querySelector("#pokemon-list").innerHTML += pokemonHTML;
+              });
+          });
+        });

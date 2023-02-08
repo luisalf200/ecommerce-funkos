@@ -8,6 +8,17 @@
     text-align: center;
 }
 
+.producto {
+    border: 2px solid maroon;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    max-width: 10%;
+    margin: 15px;
+    display: inline-block;
+}
+
 .estilo {
     color: red;
 }
