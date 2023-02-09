@@ -307,7 +307,7 @@ Borrar.addEventListener("click", function () {
   location.reload();
 });
 
-fetch("https://pokeapi.co/api/v2/pokemon?limit=100")
+fetch("https://pokeapi.co/api/v2/pokemon?limit=9")
         .then(response => response.json())
         .then(data => {
           const pokemonList = data.results.map(pokemon => ({
@@ -325,10 +325,10 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=100")
                 }));
                 
                 const pokemonHTML = `
-                <div class="producto col-12 col-md-6">
-                    <p>${data.name}</p>
+                <div class="pokedex col-12 col-md-6">
+                    <p class="display-6">${data.name}</p>
                     <img src="${data.sprites.front_default}" alt="${data.name}" onmouseover="this.src='${data.sprites.front_shiny}'" onmouseout="this.src='${data.sprites.front_default}'">
-                    <table>
+                    <table class="table table-striped-columns">
                       <tr>
                         <th>Stat</th>
                         <th>Value</th>

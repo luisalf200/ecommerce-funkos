@@ -24,7 +24,7 @@ const productos = [
   },
   {
     id: 3,
-    nombre:"Spiderman",
+    nombre:"Spider-man",
     imagen: "https://m.media-amazon.com/images/I/61IPemXlaWL._AC_SX466_.jpg",
     precio: 459,
     Mensaje: "El amigable vecino",
