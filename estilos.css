@@ -246,7 +246,13 @@ div.transbox {
 
     .collage{
         display: flex;
-        width: 600px;
+        width: 300px;
         height: 430px;
     }
+    
+    .collageimg:hover{
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
 }
