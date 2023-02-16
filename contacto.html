@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos.css">
@@ -13,7 +14,6 @@
 </head>
 
 <body>
-    <header>
         <nav class="navbar navbar-expand-lg bg-light menu">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
@@ -28,60 +28,55 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link bot" aria-current="page" href="./index.html"
+                                style="vertical-align:middle"><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
+                            <a class="nav-link bot" href="./procuctos.html"><span>Productos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./procuctos.html">Productos</a>
+                            <a class="nav-link bot" href="./contacto.html"><span>Contacto</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./tareas.html">Tareas</a>
+                            <a class="nav-link bot" href="./tareas.html"><span>Tareas</span></a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                     <button class="btn"  type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="imanav"
                                 src="./imagen/carrito.png" alt="carrito" width="10"><span id="contadoricon" class="contadorcarr">0</span></button>
                 </div>
             </div>
         </nav>
-    </header>
-    <main class="enter">
-        <section class="enter">
-            <div class="enter">
-                <h1>Contactanos para cualquier duda</h1>
+    <main>
+        <section class="w3-dark-grey margen">
+            <div class="centrar">
+                <div class="box">
+                    <h1>Contactanos para cualquier duda</h1>
+                </div>
             </div>
             <form class="row g-3">
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Nombre</label>
+                    <label for="inputEmail4" class="form-label box">Nombre</label>
                     <input type="text" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Apellido</label>
+                    <label for="inputPassword4" class="form-label box">Apellido</label>
                     <input type="text" class="form-control" id="inputPassword4">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Direccion</label>
+                    <label for="inputCity" class="form-label box">Direccion</label>
                     <input type="text" class="form-control" id="inputCity">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">Correo</label>
+                    <label for="inputState" class="form-label box">Correo</label>
                     <input id="inputState" class="form-control" type="text">
                 </div>
                 <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Edad</label>
+                    <label for="inputZip" class="form-label box">Edad</label>
                     <input type="number" class="form-control" id="inputZip">
                 </div>
                 <section>
-                    <h2 class="estilo2">Sobre cual producto tienes duda</h2>
+                    <h2 class="box">Sobre cual producto tienes duda</h2>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
@@ -102,9 +97,16 @@
                             Anime
                         </label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Otro
+                        </label>
+                    </div>
                 </section>
                 <section>
-                    <h2 class="estilo2">Tipo de consulta</h2>
+                    <h2 class="box">Tipo de consulta</h2>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
@@ -131,7 +133,7 @@
                     </div>
                 </section>
                 <section>
-                    <h2 class="estilo2">en que horario te podemos atender</h2>
+                    <h2 class="box">en que horario te podemos atender</h2>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Elija horario de atencion</option>
                         <option value="1">Matutino</option>
@@ -139,7 +141,7 @@
                     </select>
                 </section>
                 <div>
-                    <h2 class="estilo2">explica tu consulta acontinuacion</h2>
+                    <h2 class="box">explica tu consulta acontinuacion</h2>
                     <div class="form-floating">
                         <textarea class="form-control" placeholder="Leave a comment here"
                             id="floatingTextarea"></textarea>
@@ -153,9 +155,53 @@
             </form>
         </section>
     </main>
-    <footer>
-        <p>Todos los derechos reservados</p>
-    </footer>
+        <footer class="w3-container w3-padding-32 w3-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>INFO</h3>
+                    <p>Los funko pop son figuras con un diseño peculiar. basados en el concepto japonés chibi de estilo
+                        aniñado, tienen cuerpos reducidos y cabezas grandes en comparación con el cuerpo. muñecos cabezones
+                        que representan personajes de cómics, de disney, series de tv, películas o incluso personas reales.
+                    </p>
+                </div>
+                <div class="w3-third">
+                    <h3>Otras partes de la pagina</h3>
+                    <ul class="w3-ul">
+                        <a href="./tareas.html">
+                            <li class="w3-padding-16 w3-hover-black">
+                                <img src="https://cdn-icons-png.flaticon.com/512/747/747094.png"
+                                    class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">Tareas</span><br>
+                                <span>Seccion donde se pusieron todas las actiidades</span>
+                            </li>
+                        </a>
+                        <a href="./procuctos.html">
+                            <li class="w3-padding-16 w3-hover-black">
+                                <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right"
+                                    style="width:50px">
+                                <span class="w3-large">Productos</span><br>
+                                <span>Donde podras adquirir nuestros productos</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+    
+                <div class="w3-third">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                        <span class="w3-tag w3-black w3-margin-bottom">Funkos</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Emtech</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Marvel</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DC</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Anime</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Desarrollo web</span>
+                </div>
+            </div>
+            <div>
+                <p>Todos los derechos reservados</p>
+            </div>
+        </footer>
+    
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>

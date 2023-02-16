@@ -242,7 +242,7 @@ console.log(
 //tarea de semana 9 DOM, Eventos y Storage
 
 const h1 = document.querySelector("h1");
-h1.textContent = "Hola Mexico";
+h1.textContent = "Tareas";
 
 const Elemento = document.getElementById("Elemento");
 const Mostrar = document.getElementById("Mostrar");
@@ -267,8 +267,6 @@ entrenador.forEach((element) => {
         <br>
         <span class="estilo">Entrenador:</span>
         <span> ${element.inicial}</span>
-        <span class="estilo">Total:</span>
-        <span> ${element.total}</span>
       </div>
     `;
 });

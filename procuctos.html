@@ -8,59 +8,48 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="./base.css">
-    <title>Productos</title>
 </head>
 
-<body class="w3-light-grey">
-    <header>
+<body>
         <nav class="navbar navbar-expand-lg bg-light menu">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img class="imanav" src="./imagen/PopLogo.png" alt="logo">
-                </a>
-                <a class="navbar-brand titulo" href="./index.html">Funkos</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./procuctos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./tareas.html">Tareas</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    <div class="espaciocarr" id="actual">
-                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight"><img class="imanav" src="./imagen/carrito.png" alt="carrito"
-                                width="10"><span id="contadoricon" class="contadorcarr">0</span></button>
-                    </div>
-                </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img class="imanav" src="./imagen/PopLogo.png" alt="logo">
+            </a>
+            <a class="navbar-brand titulo" href="./index.html">Funkos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link bot" aria-current="page" href="./index.html"
+                            style="vertical-align:middle"><span>Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bot" href="./procuctos.html"><span>Productos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bot" href="./contacto.html"><span>Contacto</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bot" href="./tareas.html"><span>Tareas</span></a>
+                    </li>
+                </ul>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><img class="imanav" src="./imagen/carrito.png" alt="carrito"
+                        width="10"><span id="contadoricon" class="contadorcarr">0</span></button>
             </div>
-        </nav>
-    </header>
-    <div class="enter3">
-        <h1 cla>Productos</h1>
+        </div>
+    </nav>
+<section class="w3-dark-grey" >
+    <div class="centrar box">
+        <h1>Productos</h1>
     </div>
     <section class="store">
-        <p class="estilo2">Aca encontraras tus funkos favoritos como los siguientes:</p>
-        <div>
+        <div class="centrar">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 ordenar por:
@@ -77,7 +66,7 @@
     </section>
     <div class="items" id="contenedorprod"></div>
     </div>
-
+</section>
     <footer class="w3-container w3-padding-32 w3-grey">
         <div class="w3-row-padding">
             <div class="w3-third">
@@ -99,7 +88,7 @@
                             <span>Seccion donde se pusieron todas las actiidades</span>
                         </li>
                     </a>
-                    <a href="./quienes_somos.html">
+                    <a href="./index.html">
                         <li class="w3-padding-16 w3-hover-black">
                             <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right"
                                 style="width:50px">

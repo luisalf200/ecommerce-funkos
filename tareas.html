@@ -9,6 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./base.css">
     <link rel="stylesheet" href="./tarea.css">
+    <link rel="stylesheet" href="estilos.css    ">
     <title>Tareas</title>
 </head>
 
@@ -30,25 +31,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link bot" aria-current="page" href="./index.html"
+                                style="vertical-align:middle"><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
+                            <a class="nav-link bot" href="./procuctos.html"><span>Productos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./procuctos.html">Productos</a>
+                            <a class="nav-link bot" href="./contacto.html"><span>Contacto</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./tareas.html">Tareas</a>
+                            <a class="nav-link bot" href="./tareas.html"><span>Tareas</span></a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                     <button class="btn"  type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="imanav"
                                 src="./imagen/carrito.png" alt="carrito" width="10"><span id="contadoricon" class="contadorcarr">0</span></button>
@@ -56,12 +51,13 @@
             </div>
         </nav>
     </header>
-    <h1>hola mundo</h1>
-
-    <div class="estilo2" id="Mensaje"></div>
-    <input type="text" id="acanom" style="display: none;">
-    <button id="Enviar" style="display: none;">Enviar</button>
-    <button id="Borrar" style="display: none;">Borrar datos</button>
+    <div class="centrar">
+        <h1>Tareas</h1>
+        <div class="box" id="Mensaje"></div>
+        <input type="text" id="acanom" style="display: none;">
+        <button id="Enviar" style="display: none;">Enviar</button>
+        <button id="Borrar" style="display: none;">Borrar datos</button>
+    </div>
 
     <div id="Elemento"></div>
 

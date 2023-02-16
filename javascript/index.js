@@ -30,7 +30,7 @@ productos.forEach((funko) => {
     <h2 class="${funko.tipo}">${funko.serie}</h2>
     <h3 class="nomprod">${funko.nombre}</h3>
     <img class="prodimg mx-auto d-block" src=${funko.imagen} alt="${funko.nombre}">
-    <figcaption class="figure-caption">${funko.Mensaje}</figcaption>
+    <figcaption class="figure-caption palabra">${funko.Mensaje}</figcaption>
     <div class="datosprod">
         <h4 class="precios">${funko.precio}$</h4>
         <button class="btn btn-primary" id="agregar${funko.id}">Añadir al carrito</button>
