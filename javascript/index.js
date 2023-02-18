@@ -27,7 +27,7 @@ productos.forEach((funko) => {
   div.classList.add("col-12");
   div.classList.add("col-md-6");
   div.innerHTML = `
-    <h2 class="${funko.tipo}">${funko.serie}</h2>
+    <h2 class="${funko.tipo} nomprod">${funko.serie}</h2>
     <h3 class="nomprod">${funko.nombre}</h3>
     <img class="prodimg mx-auto d-block" src=${funko.imagen} alt="${funko.nombre}">
     <figcaption class="figure-caption palabra">${funko.Mensaje}</figcaption>
@@ -121,7 +121,7 @@ const actualizar = () => {
 
   
 const totalCantidades = carrito.reduce((acum, prod) => acum + prod.cantidad, 0);
-console.log("Total de cantidades:", totalCantidades);
+console.log("Total de productos:", totalCantidades);
 
   contadoricon.innerHTML = carrito.length;
   calculos();

@@ -9,6 +9,10 @@
     background: #eee;
 }
 
+.nomprod{
+    color: black;
+}
+
 .contadorcarr {
     display: inline-block;
     width: 30px;
@@ -246,13 +250,7 @@ div.transbox {
 
     .collage{
         display: flex;
-        width: 300px;
+        width: 600px;
         height: 430px;
     }
-    
-    .collageimg:hover{
-    width: 200px;
-    opacity: 1;
-    filter: contrast(120%);
-}
 }
