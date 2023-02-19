@@ -250,7 +250,7 @@ div.transbox {
 
     .collage{
         display: flex;
-        width: 600px;
+        width: 300px;
         height: 430px;
     }
 }
